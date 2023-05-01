@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+  <body>
+    <h1>Page Potin !</h1>
+    <h2>Voici le gossip number <%= @id %></h2>
+
+    <p>Son auteur n'est autre que <%= @gossip.author %></p>
+    <p>Et il a écrit cette rumeur : <%= @gossip.content %></p>
+
+    <p>Reviens à la page d'accueil mon chaton</p>
+    <a href="/">en suivant ce lien !</a> <p>ou</p> <a href="/gossips/<%= @id%>/edit/"> modifie-le en cliquant ici</a>
+  </body>
+</html>
